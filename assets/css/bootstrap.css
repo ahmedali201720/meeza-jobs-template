@@ -5460,6 +5460,7 @@ fieldset:disabled .btn {
   display: flex;
   padding-left: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 .page-link {
   position: relative;
@@ -12692,7 +12693,7 @@ body[data-layout-mode="dark"] .nav-tabs .nav-item.show .nav-link {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 4px;
+  margin: 5px 4px;
 }
 .pagination .page-item .page-link:focus,
 .pagination .page-item .page-link:hover {
