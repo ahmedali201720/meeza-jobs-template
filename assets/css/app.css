@@ -361,7 +361,7 @@ body[data-layout-mode="dark"] .footer-alt {
   position: relative;
 }
 .bg-soft-primary {
-  background-color: rgba(118, 109, 244, 0.15) !important;
+  background-color: rgba(0, 75, 111, 0.15) !important;
   color: #004b6f !important;
 }
 .bg-soft-primary .border {
@@ -2473,4 +2473,23 @@ body[data-layout-mode="dark"] .card {
 .scale-15x {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+}
+
+.fit-cover-center {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.text-facebook {
+  color: #1877f2 !important;
+}
+
+.text-whatsapp {
+  color: #00e676 !important;
+}
+
+.text-linkedin {
+  color: #0a66c2 !important;
 }
