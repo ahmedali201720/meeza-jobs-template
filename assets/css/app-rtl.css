@@ -246,9 +246,10 @@ body[data-layout-mode="dark"] .top-bar .topbar-social-menu .social-link:hover {
 }
 
 .page-title-box {
-  background-image: url("../images/home/page-title.png");
   background-size: cover;
-  background-color: #6055f2;
+  background: linear-gradient(to bottom, #004c6fca, #10506eca),
+    url(../images/head-bg.jpg);
+  background-size: cover;
   position: relative;
   padding-top: 225px;
   padding-bottom: 110px;
@@ -1456,7 +1457,7 @@ body[data-layout-mode="dark"] .job-Categories-box .job-Categories-list li {
   border: none;
 }
 .side-bar .accordion .accordion-item .accordion-button {
-  background-color: rgba(118, 109, 244, 0.15);
+  background-color: #e9f0f5;
   color: #314047;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1538,8 +1539,8 @@ body[data-layout-mode="dark"] .job-Categories-box .job-Categories-list li {
 }
 .favorite-icon a:hover {
   color: #fff;
-  background-color: #da3746;
-  border-color: #da3746;
+  background-color: #ff7738;
+  border-color: #ff7738;
 }
 
 .bookmark-post .bookmark-label,
@@ -1548,9 +1549,10 @@ body[data-layout-mode="dark"] .job-Categories-box .job-Categories-list li {
 }
 .bookmark-post .favorite-icon a,
 .job-box.bookmark-post .favorite-icon a {
-  background-color: #da3746;
+  background-color: #e76902;
   color: #fff;
   border-color: danger;
+  border-radius: 50%;
 }
 
 .job-box .favorite-icon {
@@ -2688,4 +2690,9 @@ body[data-layout-mode="dark"] .card {
 
 .pt-170 {
   padding-top: 170px;
+}
+
+.scale-15x {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
