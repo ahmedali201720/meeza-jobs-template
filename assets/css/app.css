@@ -1464,7 +1464,7 @@ body[data-layout-mode="dark"] .noUi-horizontal .noUi-handle {
   top: 0;
   bottom: 0;
   right: 0;
-  opacity: 0.35;
+  opacity: 0.2;
 }
 .subscribe-form .form-control {
   max-width: 350px;
