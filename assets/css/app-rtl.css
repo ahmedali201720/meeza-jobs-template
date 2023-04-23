@@ -1026,7 +1026,7 @@ body[data-layout-mode="dark"] .form-check-input:checked {
   content: "\f0140";
   font-family: "Material Design Icons";
   top: 35%;
-  left: 28px;
+  left: 15px;
 }
 .choices[data-type*="select-one"].is-open .choices__list--dropdown,
 .choices[data-type*="select-one"].is-open .choices__inner {
@@ -2715,3 +2715,43 @@ body[data-layout-mode="dark"] .card {
 .text-linkedin {
   color: #0a66c2 !important;
 }
+
+/* auth choices */
+
+.auth-choice-element {
+  position: relative;
+}
+
+.auth-choice-element .choices__inner {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+  color: #ffffff;
+  padding-right: 35px;
+}
+
+.auth-choice-element .choices__list--dropdown .choices__item--selectable {
+  color: #004b6f !important;
+}
+
+.auth-choice-element i {
+  position: absolute;
+  right: 15px;
+  left: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.choices__list--single .choices__item {
+  text-align: right;
+}
+
+input {
+  text-align: right;
+}
+
+form {
+  text-align: right;
+}
+
+/*End of auth choices */

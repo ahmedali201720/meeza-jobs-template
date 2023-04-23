@@ -2493,3 +2493,30 @@ body[data-layout-mode="dark"] .card {
 .text-linkedin {
   color: #0a66c2 !important;
 }
+
+/* auth choices */
+
+.auth-choice-element {
+  position: relative;
+}
+
+.auth-choice-element .choices__inner {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+  color: #ffffff;
+  padding-left: 35px;
+}
+
+.auth-choice-element .choices__list--dropdown .choices__item--selectable {
+  color: #004b6f !important;
+}
+
+.auth-choice-element i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*End of auth choices */
