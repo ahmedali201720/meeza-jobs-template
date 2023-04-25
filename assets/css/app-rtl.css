@@ -1552,7 +1552,7 @@ body[data-layout-mode="dark"] .job-Categories-box .job-Categories-list li {
   background-color: #e76902;
   color: #fff;
   border-color: danger;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .job-box .favorite-icon {
