@@ -2136,6 +2136,11 @@ body[data-layout-mode="dark"] .profile-active {
 .candidate-education-content:last-child::before {
   opacity: 0;
 }
+
+.candidate-education-content.no-before::before {
+  display: none;
+}
+
 .review-rating i {
   font-size: 16px;
   letter-spacing: -0.016rem;
@@ -2507,6 +2512,10 @@ body[data-layout-mode="dark"] .card {
   padding-left: 35px;
 }
 
+.auth-choice-element.no-icon .choices__inner {
+  padding-left: 10px;
+}
+
 .auth-choice-element .choices__list--dropdown .choices__item--selectable {
   color: #004b6f !important;
 }
@@ -2520,3 +2529,12 @@ body[data-layout-mode="dark"] .card {
 }
 
 /*End of auth choices */
+
+.std-choices-border {
+  border: 1px solid #dbdfe2;
+  border-radius: 5px;
+}
+
+.modal-large .modal-dialog {
+  max-width: 750px !important;
+}

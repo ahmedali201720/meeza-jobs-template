@@ -2729,6 +2729,10 @@ body[data-layout-mode="dark"] .card {
   padding-right: 35px;
 }
 
+.auth-choice-element.no-icon .choices__inner {
+  padding-right: 10px;
+}
+
 .auth-choice-element .choices__list--dropdown .choices__item--selectable {
   color: #004b6f !important;
 }
@@ -2755,3 +2759,12 @@ form {
 }
 
 /*End of auth choices */
+
+.std-choices-border {
+  border: 1px solid #dbdfe2;
+  border-radius: 5px;
+}
+
+.modal-large .modal-dialog {
+  max-width: 750px !important;
+}
