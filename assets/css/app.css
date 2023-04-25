@@ -2538,3 +2538,8 @@ body[data-layout-mode="dark"] .card {
 .modal-large .modal-dialog {
   max-width: 750px !important;
 }
+
+.mirror-x {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
