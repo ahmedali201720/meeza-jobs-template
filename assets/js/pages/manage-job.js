@@ -22,6 +22,11 @@ function pageReady() {
     minYear: 1970,
     maxYear: parseInt(moment().format("YYYY"), 10),
   });
+  // CKEditor
+  CKEDITOR.replace("description");
+  CKEDITOR.replace("responsibilities");
+  CKEDITOR.replace("qualifications");
+  CKEDITOR.replace("experience");
 }
 
 document.addEventListener("DOMContentLoaded", pageReady, false);
