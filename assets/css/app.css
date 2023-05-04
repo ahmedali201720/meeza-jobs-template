@@ -338,10 +338,11 @@ body[data-layout-mode="dark"] .job-pagination .page-item.active .page-link {
   border-color: #004b6f;
 }
 .bg-footer {
-  background: #2e3538;
+  background: #004b6f;
   padding: 60px 0;
   position: relative;
   font-size: 14px;
+  border-top: 1px solid #ffffff29;
 }
 .footer-social-menu li a {
   display: inline-block;
@@ -349,7 +350,7 @@ body[data-layout-mode="dark"] .job-pagination .page-item.active .page-link {
   height: 32px;
   line-height: 30px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 40px;
   -webkit-transition: all 0.5s ease;
@@ -363,7 +364,7 @@ body[data-layout-mode="dark"] .job-pagination .page-item.active .page-link {
 .footer-list li a {
   display: inline-block;
   padding-bottom: 16px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -372,7 +373,7 @@ body[data-layout-mode="dark"] .job-pagination .page-item.active .page-link {
   letter-spacing: 0.4px;
 }
 .footer-alt {
-  background: #2e3538;
+  background: #000000;
   padding: 20px 0;
   border-top: 1px solid #343c3f;
 }
@@ -1234,15 +1235,23 @@ body[data-layout-mode="dark"] .registration-form .form-control {
   transition: all 0.5s ease;
 }
 .popu-category-box .popu-category-icon {
-  width: 64px;
-  height: 64px;
+  width: 120px;
+  height: 120px;
+  padding: 15px;
   line-height: 64px;
-  border-radius: 8px;
+  border-radius: 50%;
   text-align: center;
   font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(118, 109, 244, 0.1);
+  background-color: #d8f1fd;
+}
+.popu-category-box .popu-category-icon img {
+  width: 75px;
+  height: 75px;
 }
 .popu-category-box:hover {
   -webkit-transform: translateY(-8px);
@@ -1482,7 +1491,7 @@ body[data-layout-mode="dark"] .noUi-horizontal .noUi-handle {
   position: relative;
   padding: 80px 0;
   overflow: hidden;
-  background-color: #004c6fe3;
+  background-color: #032938df;
   bottom: -1px;
 }
 .bg-subscribe .email-img {
@@ -2596,4 +2605,17 @@ body[data-layout-mode="dark"] .card {
 
 .next-section-link:hover {
   color: #ababab;
+}
+
+.rounded-bottom-circle {
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+.std-padding-top {
+  padding-top: 100px;
+}
+
+.std-padding-bottom {
+  padding-bottom: 100px;
 }
