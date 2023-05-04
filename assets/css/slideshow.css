@@ -160,14 +160,17 @@
 }
 
 .slideshow-filter {
-  background-color: #ffffff;
-  padding: 15px;
   position: absolute;
   top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 75%;
+  width: 60%;
+}
+
+.slideshow-filter form {
+  background-color: #ffffff;
+  padding: 8px 10px;
   border-radius: 6px;
   opacity: 0.9;
 }

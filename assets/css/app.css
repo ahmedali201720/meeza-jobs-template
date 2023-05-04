@@ -344,7 +344,7 @@ body[data-layout-mode="dark"] .job-pagination .page-item.active .page-link {
   border-color: #004b6f;
 }
 .bg-footer {
-  background: #004b6f;
+  background: #031431;
   padding: 60px 0;
   position: relative;
   font-size: 14px;
@@ -2526,6 +2526,10 @@ body[data-layout-mode="dark"] .card {
   border-color: #3d454e;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
 .pt-170 {
   padding-top: 170px;
 }
@@ -2730,4 +2734,12 @@ body[data-layout-mode="dark"] .card {
 
 .bg-primary-light {
   background-color: #ddf2fb;
+}
+
+.bg-blue {
+  background-color: #0055d9;
+}
+
+.bg-green {
+  background-color: #34ac79;
 }
