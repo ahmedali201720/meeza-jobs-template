@@ -2281,13 +2281,13 @@ body[data-layout-mode="dark"] .profile-active {
   color: #00000094;
 }
 .auth-box .auth-form .form-control::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.45);
+  color: #00000094;
 }
 .auth-box .auth-form .form-control:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.45);
+  color: #00000094;
 }
 .auth-box .auth-form .form-control:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.45);
+  color: #00000094;
 }
 body[data-layout-mode="dark"] .bg-auth {
   background-color: #303841;
@@ -2718,6 +2718,6 @@ body[data-layout-mode="dark"] .card {
 }
 
 .form-list-items .item p {
-  font-weight: 700;
+  font-weight: 600;
   color: #004b72;
 }

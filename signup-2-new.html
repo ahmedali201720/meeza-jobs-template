@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Meeza Jobs | Individual Registration</title>
+    <title>Meeza Jobs | Organization Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Meeza Jobs | Find Your Dream Job" />
     <meta name="keywords" content="Meeza,Jobs" />
@@ -10,11 +10,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/icon.jpeg" />
     <!-- Bootstrap Css -->
-    <link
-      href="assets/css/bootstrap.css?v=1.1.1"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link
       href="assets/libs/choices.js/public/assets/styles/choices.min.css"
       rel="stylesheet"
@@ -23,7 +19,7 @@
     <!-- Icons Css -->
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link href="assets/css/app.css?v=1.1.1" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!--Custom Css-->
   </head>
   <body>
@@ -31,15 +27,15 @@
     <div>
       <div class="main-content">
         <div class="page-content">
-          <section class="bg-auth new">
+          <section class="bg-auth new company">
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-12">
-                  <div class="card auth-box">
+                  <div class="card auth-box overflow-visible">
                     <div class="row align-items-center">
                       <div class="col-lg-5">
                         <div class="card-body p-md-5 p-4">
-                          <a class="d-block mb-4" href="index.html">
+                          <a href="index.html">
                             <img
                               src="assets/images/logo-trans.png"
                               width="200"
@@ -156,7 +152,7 @@
                             </div>
                           </div>
                           <p class="mb-0">
-                            To Register as an organization,
+                            To Register as an Individual,
                             <a
                               href="sign-up.html"
                               class="fw-medium text-primary text-decoration-underline"
@@ -170,7 +166,7 @@
                       <div class="col-lg-7">
                         <div class="auth-content card-body p-5 text-white">
                           <div class="w-100">
-                            <div class="text-center mb-4 pb-1">
+                            <div class="text-center mb-4">
                               <h5>Let's Get Started</h5>
                               <p class="text-white-70">
                                 Sign Up and get access to all the features of
@@ -191,33 +187,20 @@
                             <div class="form-separator mb-3">OR</div>
                             <form action="index.html" class="auth-form">
                               <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-12">
                                   <div class="mb-3">
-                                    <label for="firstName" class="form-label"
-                                      >First Name</label
+                                    <label
+                                      for="organizationName"
+                                      class="form-label"
+                                      >Institution Name</label
                                     >
                                     <input
                                       type="text"
                                       class="form-control"
                                       required
-                                      id="firstName"
-                                      placeholder="Enter your first Name"
-                                      name="firstName"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="mb-3">
-                                    <label for="lastName" class="form-label"
-                                      >Last Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      required
-                                      id="lastName"
-                                      placeholder="Enter your first Name"
-                                      name="lastName"
+                                      id="organizationName"
+                                      placeholder="Enter Institution Name"
+                                      name="organizationName"
                                     />
                                   </div>
                                 </div>
@@ -250,6 +233,40 @@
                                       id="phoneInput"
                                       placeholder="Enter your Phone Number"
                                       name="phoneInput"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="mb-3">
+                                    <label
+                                      for="passwordInput"
+                                      class="form-label"
+                                      >Password</label
+                                    >
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      id="passwordInput"
+                                      placeholder="Enter your password"
+                                      name="password"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="mb-3">
+                                    <label
+                                      for="confirmPasswordInput"
+                                      class="form-label"
+                                      >Confirm Password</label
+                                    >
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      id="confirmPasswordInput"
+                                      placeholder="Enter your password again"
+                                      name="confirmPasswordInput"
                                     />
                                   </div>
                                 </div>
@@ -318,7 +335,7 @@
                                 </div>
                               </div>
                               <div class="row">
-                                <div class="col-12">
+                                <div class="col-md-6">
                                   <div class="mb-3">
                                     <label for="countryInput" class="form-label"
                                       >specialization</label
@@ -350,41 +367,43 @@
                                     </div>
                                   </div>
                                 </div>
-                              </div> -->
-                              <div class="row">
                                 <div class="col-md-6">
                                   <div class="mb-3">
-                                    <label
-                                      for="passwordInput"
-                                      class="form-label"
-                                      >Password</label
+                                    <label for="count" class="form-label"
+                                      >No. of Employees</label
                                     >
-                                    <input
-                                      type="password"
-                                      class="form-control"
-                                      id="passwordInput"
-                                      placeholder="Enter your password"
-                                      name="password"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="mb-3">
-                                    <label
-                                      for="confirmPasswordInput"
-                                      class="form-label"
-                                      >Confirm Password</label
-                                    >
-                                    <input
-                                      type="password"
-                                      class="form-control"
-                                      id="confirmPasswordInput"
-                                      placeholder="Enter your password again"
-                                      name="confirmPasswordInput"
-                                    />
+                                    <div class="auth-choice-element">
+                                      <i class="uil uil-user-arrows"></i>
+                                      <select
+                                        class="form-select"
+                                        data-trigger
+                                        name="count"
+                                        id="count"
+                                      >
+                                        <option value="CA">1-50</option>
+                                        <option value="GI">51-100</option>
+                                        <option value="AL">100-200</option>
+                                      </select>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="mb-3">
+                                    <label for="address" class="form-label"
+                                      >Detailed Address</label
+                                    >
+                                    <textarea
+                                      class="form-control"
+                                      name="address"
+                                      id="address"
+                                      rows="2"
+                                      placeholder="Enter address in details"
+                                    ></textarea>
+                                  </div>
+                                </div>
+                              </div> -->
                               <div class="mb-4">
                                 <div class="form-check">
                                   <input
