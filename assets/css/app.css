@@ -33,6 +33,13 @@
   -webkit-box-shadow: 0 3px 10px 0 rgba(49, 64, 71, 0.08);
   box-shadow: 0 3px 10px 0 rgba(49, 64, 71, 0.08);
 }
+.navbar.no-top {
+  margin-top: 15px;
+}
+.navbar.transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
 .navbar .navbar-nav .nav-link {
   color: #314047;
   font-size: 13px;
@@ -47,7 +54,17 @@
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:active,
 .navbar .navbar-nav .nav-link:hover {
-  color: #004b6f;
+  color: #a2a2a2;
+}
+.navbar.transparent:not(.nav-sticky) .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.navbar.transparent:not(.nav-sticky) .header-item {
+  color: #ffffff;
+}
+.navbar.transparent:not(.nav-sticky) .navbar-brand .logo-dark {
+  -webkit-filter: brightness(100);
+  filter: brightness(100);
 }
 .navbar .navbar-toggler {
   padding: 0;
@@ -76,6 +93,15 @@
   border-radius: 0;
   display: inline-block;
 }
+.navbar.transparent:not(.nav-sticky) .navbar-toggler {
+  color: #ffffff;
+}
+@media screen and (max-width: 991px) {
+  .navbar.transparent:not(.nav-sticky) .navbar-nav.main-links .nav-link {
+    color: #000000;
+  }
+}
+
 .notification-wrapper {
   max-height: 250px;
   overflow: hidden scroll;
@@ -2542,4 +2568,32 @@ body[data-layout-mode="dark"] .card {
 .mirror-x {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.brightness-100 {
+  -webkit-filter: brightness(100);
+  filter: brightness(100);
+}
+
+.next-section-link {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 50px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4;
+}
+
+.next-section-link:hover {
+  color: #ababab;
 }
