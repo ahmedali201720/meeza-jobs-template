@@ -2223,6 +2223,19 @@ body[data-layout-mode="dark"] .profile-active {
   display: flex;
   min-height: 100vh;
 }
+.bg-auth.new {
+  background: url("../images/login-bg-2.jpg");
+}
+.bg-auth.new.company {
+  background: url("../images/login-bg-3.jpg");
+}
+.bg-auth.new form label,
+.bg-auth.new form input,
+.bg-auth.new form select,
+.bg-auth.new form textarea,
+.bg-auth.new form span {
+  font-size: 14px;
+}
 @media (max-width: 991.98px) {
   .bg-auth {
     padding: 60px 0;
@@ -2234,6 +2247,7 @@ body[data-layout-mode="dark"] .profile-active {
   box-shadow: 0 5px 6px rgba(49, 64, 71, 0.1);
   border-radius: 10px;
   overflow: hidden;
+  opacity: 0.95;
 }
 .auth-box .auth-content {
   background-color: #004b72;
@@ -2259,12 +2273,12 @@ body[data-layout-mode="dark"] .profile-active {
   display: none;
 }
 .auth-box .auth-form .form-control {
-  color: #fff;
+  color: #004b6f;
   border-color: rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .auth-box .auth-form .form-control::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.45);
+  color: #00000094;
 }
 .auth-box .auth-form .form-control::-moz-placeholder {
   color: rgba(255, 255, 255, 0.45);
@@ -2618,4 +2632,71 @@ body[data-layout-mode="dark"] .card {
 
 .std-padding-bottom {
   padding-bottom: 100px;
+}
+
+.google-login-btn {
+  display: flex;
+  width: 100%;
+}
+
+.google-login-btn .image {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #4285f4;
+}
+
+.google-login-btn .image img {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.google-login-btn .text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  height: 45px;
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+
+.google-login-btn .text:hover {
+  background-color: #659ef9;
+  border: 1px solid #659ef9;
+}
+
+.form-separator {
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  color: #ffffffb1;
+}
+
+.form-separator::before {
+  content: "";
+  display: block;
+  margin-right: 1em;
+  height: 1px;
+  width: 50%;
+  background-color: #ffffffb1;
+}
+
+.form-separator::after {
+  content: "";
+  display: block;
+  margin-left: 1em;
+  height: 1px;
+  width: 50%;
+  background-color: #ffffffb1;
 }
