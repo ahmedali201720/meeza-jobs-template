@@ -2700,3 +2700,24 @@ body[data-layout-mode="dark"] .card {
   width: 50%;
   background-color: #ffffffb1;
 }
+
+.form-list-items .item {
+  text-align: left;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.form-list-items .item i {
+  float: left;
+  color: #004b6f;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.form-list-items .item p {
+  font-weight: 700;
+  color: #004b72;
+}
