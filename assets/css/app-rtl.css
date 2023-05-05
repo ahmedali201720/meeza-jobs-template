@@ -347,7 +347,14 @@ body[data-layout-mode="dark"] .top-bar .topbar-social-menu .social-link:hover {
 .breadcrumb .breadcrumb-item a:hover {
   color: #e2e5e8;
 }
-
+.page-title-box-2 {
+  margin-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  .page-title-box-2 {
+    margin-top: 50px;
+  }
+}
 /*****************dark-mode******************/
 body[data-layout-mode="dark"] .page-title-box {
   background-color: #242c34;

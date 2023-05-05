@@ -329,6 +329,14 @@ body[data-layout-mode="dark"] .top-bar .topbar-social-menu .social-link:hover {
 body[data-layout-mode="dark"] .page-title-box {
   background-color: #242c34;
 }
+.page-title-box-2 {
+  margin-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  .page-title-box-2 {
+    margin-top: 50px;
+  }
+}
 body[data-layout-mode="dark"] .shape > svg path {
   fill: #283039;
 }
