@@ -70,10 +70,7 @@ body {
 .navbar.transparent:not(.nav-sticky) .header-item {
   color: #ffffff;
 }
-.navbar.transparent:not(.nav-sticky) .navbar-brand .logo-dark {
-  -webkit-filter: brightness(100);
-  filter: brightness(100);
-}
+
 .navbar .navbar-toggler {
   padding: 0px;
   border: none;
@@ -3066,4 +3063,28 @@ form {
 
 .sidebar-dropdown-li .menu li a:hover {
   padding-right: 30px !important;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border-radius: 50px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background-color: #e5e5e5;
+  border-radius: 5px;
+}
+
+.table-container {
+  scrollbar-width: auto;
+  scrollbar-color: #b8b8b8 #e5e5e5;
+}
+
+.portal-dashboard-table {
+  min-width: 650px;
 }

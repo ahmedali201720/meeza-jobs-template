@@ -63,8 +63,16 @@
   color: #ffffff;
 }
 .navbar.transparent:not(.nav-sticky) .navbar-brand .logo-dark {
-  -webkit-filter: brightness(100);
-  filter: brightness(100);
+  display: none;
+}
+.navbar.transparent:not(.nav-sticky) .navbar-brand .logo-light {
+  display: inline-block;
+}
+.navbar.transparent.nav-sticky .navbar-brand .logo-dark {
+  display: inline-block;
+}
+.navbar.transparent.nav-sticky .navbar-brand .logo-light {
+  display: none;
 }
 .navbar .navbar-toggler {
   padding: 0;
