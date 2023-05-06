@@ -53,9 +53,15 @@ function pageReady() {
     maxYear: parseInt(moment().format("YYYY"), 10),
   });
   // CKEditor
-  CKEDITOR.replace("description");
-  CKEDITOR.replace("responsibilities");
-  CKEDITOR.replace("qualifications");
+  if (document.getElementById("description")) {
+    CKEDITOR.replace("description");
+  }
+  if (document.getElementById("responsibilities")) {
+    CKEDITOR.replace("responsibilities");
+  }
+  if (document.getElementById("qualifications")) {
+    CKEDITOR.replace("qualifications");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", pageReady, false);
