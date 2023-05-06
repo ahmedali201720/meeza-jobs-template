@@ -2751,3 +2751,82 @@ body[data-layout-mode="dark"] .card {
 .bg-green {
   background-color: #34ac79;
 }
+
+/* Company Portal Dashboard */
+
+.portal-sidebar {
+  border-radius: 6px;
+}
+
+.portal-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.portal-sidebar ul li {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.portal-sidebar ul li i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.portal-sidebar ul li a {
+  position: relative;
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  color: #000000;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+.portal-sidebar ul li:not(.sidebar-dropdown-li):hover a,
+.portal-sidebar ul li:not(.sidebar-dropdown-li):hover i {
+  color: #02af74;
+}
+
+.portal-sidebar ul li:not(.sidebar-dropdown-li):hover a {
+  padding-left: 20px;
+}
+
+.sidebar-dropdown-li .menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.sidebar-dropdown-li .menu.open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.sidebar-dropdown-li .menu li {
+  border: 0 !important;
+  margin-bottom: 0;
+}
+
+.sidebar-dropdown-li .menu li a {
+  padding-top: 0;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 25px;
+}
+
+.sidebar-dropdown-li .menu li:last-child a {
+  padding-bottom: 15px;
+}
+
+.sidebar-dropdown-li .menu li i {
+  position: static;
+}
+
+.sidebar-dropdown-li .menu li a:hover {
+  padding-left: 30px !important;
+}
