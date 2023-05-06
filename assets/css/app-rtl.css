@@ -2984,6 +2984,10 @@ form {
   background-color: #34ac79;
 }
 
+.v-align-middle {
+  vertical-align: middle;
+}
+
 /* Company Portal Dashboard */
 
 .portal-sidebar {
