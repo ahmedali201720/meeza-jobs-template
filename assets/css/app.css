@@ -2766,7 +2766,8 @@ body[data-layout-mode="dark"] .card {
 .portal-sidebar ul li {
   border: 1px solid #e6e6e6;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 6px;
+  background-color: #ffffff;
 }
 .portal-sidebar ul li i {
   position: absolute;
