@@ -101,6 +101,10 @@
   border-radius: 0;
   display: inline-block;
 }
+.navbar.transparent.nav-sticky .list-inline-item.link a {
+  color: #000000 !important;
+  font-weight: 500;
+}
 .navbar.transparent:not(.nav-sticky) .navbar-toggler {
   color: #ffffff;
 }

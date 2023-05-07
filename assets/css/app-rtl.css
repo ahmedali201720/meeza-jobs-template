@@ -70,7 +70,10 @@ body {
 .navbar.transparent:not(.nav-sticky) .header-item {
   color: #ffffff;
 }
-
+.navbar.transparent.nav-sticky .list-inline-item.link a {
+  color: #000000 !important;
+  font-weight: 500;
+}
 .navbar .navbar-toggler {
   padding: 0px;
   border: none;
