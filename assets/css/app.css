@@ -1252,7 +1252,7 @@ body[data-layout-mode="dark"] .registration-form .form-control {
   background-color: #303841;
 }
 .popu-category-box {
-  padding: 2.5rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -1356,6 +1356,10 @@ body[data-layout-mode="dark"] .job-Categories-box .job-Categories-list li {
   z-index: 1;
   color: #004b6f;
   font-size: 20px;
+}
+.job-box img {
+  width: 130px;
+  height: auto;
 }
 .filler-job-form .choices__inner,
 .filter-job-input-box,
