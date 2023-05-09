@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Meeza Jobs | Manage Approvals</title>
+    <title>Meeza Jobs | Manage Users Post</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="AAli" name="author" />
     <!-- App favicon -->
@@ -74,19 +74,11 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" />
     <!-- Bootstrap Css -->
-    <link
-      href="assets/css/bootstrap.css?v=1.1.1"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link
-      href="assets/css/app.css?v=2.0.1.3"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!--Custom Css-->
   </head>
   <body>
@@ -619,7 +611,7 @@
                       <div class="bg-soft-primary rounded-2 p-3">
                         <h5 class="mb-0 fs-17 text-start">
                           <i class="uil uil-plus-circle me-2"></i>
-                          Add / Edit Stage
+                          Add New User!
                         </h5>
                       </div>
                     </div>
@@ -628,16 +620,76 @@
                   <form action="#" class="job-post-form shadow mt-4">
                     <div class="job-post-content box-shadow-md rounded-3 p-4">
                       <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-6">
                           <div class="mb-4">
-                            <label for="jobtitle" class="form-label"
-                              >Stage Title</label
+                            <label for="fullName" class="form-label"
+                              >Full Name
+                              <span class="text-danger">*</span></label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="stageTitle"
-                              placeholder="Enter Stage Title"
+                              id="fullName"
+                              placeholder="Enter Name"
+                              name="fullName"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="mb-4">
+                            <label for="phone" class="form-label"
+                              >Phone Number
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="phone"
+                              placeholder="Enter Phone Number"
+                              name="phone"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="mb-4">
+                            <label for="email" class="form-label"
+                              >Email Address
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="email"
+                              placeholder="Enter Email Address"
+                              name="email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="mb-4">
+                            <label for="password" class="form-label"
+                              >Password
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="password"
+                              placeholder="Enter User Password"
+                              name="password"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="mb-4">
+                            <label for="birthdate" class="form-label"
+                              >Birthdate</label
+                            >
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="birthdate"
+                              placeholder="Birthdate --"
                             />
                           </div>
                         </div>
@@ -647,43 +699,55 @@
                             <label
                               for="choices-single-categories"
                               class="form-label"
-                              >Type</label
+                              >Gender</label
                             >
                             <select
                               class="form-select"
-                              data-trigger=""
-                              name="type"
-                              id="type"
+                              name="gender"
+                              id="categories"
                             >
-                              <option value="">-- Select Type --</option>
-                              <option value="ne">Deartment Head</option>
-                              <option value="df">
-                                Vice President Medical Affairs
-                              </option>
-                              <option value="od">Chef HR Officer</option>
-                              <option value="rd">Chef Executive Officer</option>
+                              <option value="">-- Select Gender --</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
                             </select>
                           </div>
                         </div>
                         <!--end col-->
-                        <div class="col-lg-12">
-                          <div
-                            class="wrapper d-flex justify-content-start flex-wrap gap-3 mb-4"
-                          >
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="publisCheck"
-                              />
-                              <label class="form-check-label" for="publisCheck">
-                                Publish
-                              </label>
-                            </div>
+                        <div class="col-lg-6">
+                          <div class="mb-4">
+                            <label for="speciality" class="form-label"
+                              >Role</label
+                            >
+                            <select
+                              class="form-select"
+                              data-trigger=""
+                              name="role"
+                              id="speciality"
+                            >
+                              <option value="">-- Select Role --</option>
+                              <option value="user">User</option>
+                              <option value="user">Admin</option>
+                            </select>
                           </div>
                         </div>
                         <!--end col-->
+                        <div class="col-lg-6">
+                          <div class="mb-4">
+                            <label for="type" class="form-label"
+                              >Approval</label
+                            >
+                            <select
+                              class="form-select"
+                              data-trigger=""
+                              name="approval"
+                              id="type"
+                            >
+                              <option value="">-- Select Approval --</option>
+                              <option value="user">Dep Head</option>
+                              <option value="user">HR Head</option>
+                            </select>
+                          </div>
+                        </div>
                         <div class="col-lg-12">
                           <div
                             class="d-flex flex-sm-row flex-column justify-content-end gap-2"
@@ -693,11 +757,8 @@
                               class="btn btn-outline-secondary"
                               >Back</a
                             >
-                            <a
-                              href="javascript:void(0)"
-                              class="btn btn-primary"
-                            >
-                              Save Stage
+                            <a href="javascript:void(0)" class="btn btn-primary"
+                              >Save User
                               <i
                                 class="mdi mdi-send ms-2 d-inline-block mirror-x-ar"
                               ></i

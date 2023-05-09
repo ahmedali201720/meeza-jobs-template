@@ -46,12 +46,13 @@ function pageReady() {
     expElementChoice = new Choices(expElement);
   }
   // Date Ranger Picker
-  $(".rangeinput").daterangepicker({
-    singleDatePicker: true,
-    showDropdowns: true,
-    minYear: 1970,
-    maxYear: parseInt(moment().format("YYYY"), 10),
-  });
+  if ($(".rangeinput")?.length) {
+    $(".rangeinput").daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true,
+      minYear: 1970,
+    });
+  }
   // CKEditor
   if (document.getElementById("description")) {
     CKEDITOR.replace("description");

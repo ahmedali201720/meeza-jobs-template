@@ -70,15 +70,15 @@
       rel="stylesheet"
       href="assets/libs/choices.js/public/assets/styles/choices.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/daterangepicker.css" />
+    <!-- Nouislider Css -->
+    <link
+      rel="stylesheet"
+      href="assets/libs/nouisliderribute/nouislider.min.css"
+    />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" />
     <!-- Bootstrap Css -->
-    <link
-      href="assets/css/bootstrap.css?v=1.1.1"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -473,7 +473,7 @@
           <section class="page-title-box-2"></section>
           <!-- end home -->
 
-          <!-- START JOBS-POST-EDIT -->
+          <!-- START MANAGE-Users -->
           <section class="section">
             <div class="container-fluid">
               <div class="row g-4 d-flex justify-content-between">
@@ -614,108 +614,349 @@
                   </div>
                 </div>
                 <div class="col-xxl-9 col-xl-8 col-lg-7 col-md-6">
-                  <div class="row">
+                  <div class="row g-2 mb-lg-5 mb-4">
+                    <div class="col-12">
+                      <div class="messages">
+                        <div
+                          class="bg-soft-success py-3 px-4 fs-14 text-start d-flex rounded-2"
+                        >
+                          <i class="uil uil-check-circle me-2"></i>
+                          Stage has been Created Successfully
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="messages">
+                        <div
+                          class="bg-soft-warning py-3 px-4 fs-14 text-start d-flex rounded-2"
+                        >
+                          <i class="uil uil-exclamation-circle me-2"></i>
+                          You should specify the title of the
+                          .........................
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="messages">
+                        <div
+                          class="bg-soft-danger py-3 px-4 text-start d-flex rounded-2"
+                        >
+                          <i class="uil uil-times-circle me-2"></i>
+                          You don't have permission to view company stages.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col-xl-4">
+                      <div class="mb-4 mb-lg-0">
+                        <h6 class="mb-0">Users List</h6>
+                      </div>
+                    </div>
+                    <!--end col-->
+                    <div class="col-xl-8">
+                      <div class="candidate-list-widgets">
+                        <div class="row d-flex justify-content-end">
+                          <div class="col-lg-4">
+                            <div class="form-group mb-2">
+                              <input
+                                class="form-control"
+                                type="text"
+                                name="search"
+                                id="tableKey"
+                                placeholder="Search Users .."
+                              />
+                            </div>
+                          </div>
+                          <!--end col-->
+                          <div class="col-lg-4">
+                            <div class="selection-widget mt-2 mt-lg-0">
+                              <select
+                                class="form-select"
+                                data-trigger
+                                name="choices-candidate-page"
+                                id="choices-candidate-page"
+                                aria-label="Default select example"
+                              >
+                                <option value="df">All</option>
+                                <option value="ne">Dep Head</option>
+                                <option value="ne">HR Head</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!--end col-->
+                        </div>
+                        <!--end row-->
+                      </div>
+                      <!--end candidate-list-widgets-->
+                    </div>
+                    <!--end col-->
+                  </div>
+                  <!--end row-->
+                  <div class="row mt-4">
                     <div class="col-lg-12">
-                      <div class="bg-soft-primary rounded-2 p-3">
-                        <h5 class="mb-0 fs-17 text-start">
-                          <i class="uil uil-plus-circle me-2"></i>
-                          Add / Edit Stage
-                        </h5>
+                      <div class="table-container overflow-auto">
+                        <table class="table portal-dashboard-table">
+                          <thead>
+                            <tr class="bg-soft-secondary">
+                              <th scope="col">No.</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Role</th>
+                              <th scope="col">Approval</th>
+                              <th scope="col" class="text-center">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th class="v-align-middle fs-14" scope="row">
+                                1
+                              </th>
+                              <td class="v-align-middle fs-13">Omar Bakry</td>
+                              <td class="v-align-middle fs-13">
+                                omarbakry2023@gmail.com
+                              </td>
+                              <td class="v-align-middle fs-13">User</td>
+                              <td class="v-align-middle">
+                                <span
+                                  class="bg-soft-success fs-12 rounded-pill py-1 px-3"
+                                  >Dep Head</span
+                                >
+                              </td>
+                              <td style="width: 200px">
+                                <ul class="list-inline text-center mb-0">
+                                  <li
+                                    class="list-inline-item"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Edit"
+                                  >
+                                    <a
+                                      href="#"
+                                      class="avatar-xs bg-soft-success d-inline-block text-center rounded-circle fs-18"
+                                    >
+                                      <i class="uil uil-edit"></i>
+                                    </a>
+                                  </li>
+                                  <li
+                                    class="list-inline-item"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Delete"
+                                  >
+                                    <a
+                                      href="javascript:void(0)"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#deleteModal"
+                                      class="avatar-xs bg-soft-danger d-inline-block text-center rounded-circle fs-18"
+                                    >
+                                      <i class="uil uil-trash-alt"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="v-align-middle fs-14" scope="row">
+                                2
+                              </th>
+                              <td class="v-align-middle fs-13">
+                                Ahmed Ali Mohamed
+                              </td>
+                              <td class="v-align-middle fs-13">
+                                ahmedali2023@gmail.com
+                              </td>
+                              <td class="v-align-middle fs-13">Admin</td>
+                              <td class="v-align-middle">
+                                <span
+                                  class="bg-soft-danger fs-12 rounded-pill py-1 px-3"
+                                  >HR Head</span
+                                >
+                              </td>
+                              <td style="width: 200px">
+                                <ul class="list-inline text-center mb-0">
+                                  <li
+                                    class="list-inline-item"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Edit"
+                                  >
+                                    <a
+                                      href="#"
+                                      class="avatar-xs bg-soft-success d-inline-block text-center rounded-circle fs-18"
+                                    >
+                                      <i class="uil uil-edit"></i>
+                                    </a>
+                                  </li>
+                                  <li
+                                    class="list-inline-item"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Delete"
+                                  >
+                                    <a
+                                      href="javascript:void(0)"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#deleteModal"
+                                      class="avatar-xs bg-soft-danger d-inline-block text-center rounded-circle fs-18"
+                                    >
+                                      <i class="uil uil-trash-alt"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="v-align-middle fs-14" scope="row">
+                                3
+                              </th>
+                              <td class="v-align-middle fs-13">
+                                Kawthar Alydin Ahmed
+                              </td>
+                              <td class="v-align-middle fs-13">
+                                kwthar2034@gmail.com
+                              </td>
+                              <td class="v-align-middle fs-13">User</td>
+                              <td class="v-align-middle">
+                                <span
+                                  class="bg-soft-success fs-12 rounded-pill py-1 px-3"
+                                  >Dep Head</span
+                                >
+                              </td>
+                              <td style="width: 200px">
+                                <ul class="list-inline text-center mb-0">
+                                  <li
+                                    class="list-inline-item"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Edit"
+                                  >
+                                    <a
+                                      href="#"
+                                      class="avatar-xs bg-soft-success d-inline-block text-center rounded-circle fs-18"
+                                    >
+                                      <i class="uil uil-edit"></i>
+                                    </a>
+                                  </li>
+                                  <li
+                                    class="list-inline-item"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Delete"
+                                  >
+                                    <a
+                                      href="javascript:void(0)"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#deleteModal"
+                                      class="avatar-xs bg-soft-danger d-inline-block text-center rounded-circle fs-18"
+                                    >
+                                      <i class="uil uil-trash-alt"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                     <!--end col-->
                   </div>
-                  <form action="#" class="job-post-form shadow mt-4">
-                    <div class="job-post-content box-shadow-md rounded-3 p-4">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="mb-4">
-                            <label for="jobtitle" class="form-label"
-                              >Stage Title</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="stageTitle"
-                              placeholder="Enter Stage Title"
-                            />
-                          </div>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-6">
-                          <div class="mb-4">
-                            <label
-                              for="choices-single-categories"
-                              class="form-label"
-                              >Type</label
-                            >
-                            <select
-                              class="form-select"
-                              data-trigger=""
-                              name="type"
-                              id="type"
-                            >
-                              <option value="">-- Select Type --</option>
-                              <option value="ne">Deartment Head</option>
-                              <option value="df">
-                                Vice President Medical Affairs
-                              </option>
-                              <option value="od">Chef HR Officer</option>
-                              <option value="rd">Chef Executive Officer</option>
-                            </select>
-                          </div>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-12">
-                          <div
-                            class="wrapper d-flex justify-content-start flex-wrap gap-3 mb-4"
-                          >
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="publisCheck"
-                              />
-                              <label class="form-check-label" for="publisCheck">
-                                Publish
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-12">
-                          <div
-                            class="d-flex flex-sm-row flex-column justify-content-end gap-2"
-                          >
+                  <!--end row-->
+                  <div class="row">
+                    <div class="col-lg-12 mt-4 pt-2">
+                      <nav aria-label="Page navigation example">
+                        <ul
+                          class="pagination job-pagination mb-0 justify-content-center"
+                        >
+                          <li class="page-item disabled">
                             <a
+                              class="page-link"
                               href="javascript:void(0)"
-                              class="btn btn-outline-secondary"
-                              >Back</a
+                              tabindex="-1"
                             >
-                            <a
-                              href="javascript:void(0)"
-                              class="btn btn-primary"
-                            >
-                              Save Stage
-                              <i
-                                class="mdi mdi-send ms-2 d-inline-block mirror-x-ar"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
+                              <i class="mdi mdi-chevron-double-left fs-15"></i>
+                            </a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="javascript:void(0)">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">
+                              <i class="mdi mdi-chevron-double-right fs-15"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
-                    <!--end job-post-content-->
-                  </form>
+                    <!--end col-->
+                  </div>
                 </div>
               </div>
             </div>
             <!--end container-->
           </section>
-          <!-- END JOBS-POST-EDIT -->
+          <!-- END MANAGE-JOBS -->
+
+          <!-- DELETE Modal -->
+          <div
+            class="modal fade"
+            id="deleteModal"
+            tabindex="-1"
+            aria-labelledby="deleteModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    Delete Jobs ?
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <h6 class="text-danger">
+                      <i class="uil uil-exclamation-triangle"></i> Warning: Are
+                      you sure you want to delete job Post ?
+                    </h6>
+                    <p class="text-muted">
+                      Your jobs post will be permenently removed and you won't
+                      be able to see them again, including the once you're
+                      shared with your friends.
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm">
+                    Yes, delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END DELETE MODAL -->
         </div>
 
         <!-- START FOOTER -->
@@ -895,6 +1136,7 @@
           </div>
           <!--end container-->
         </section>
+
         <!-- END FOOTER -->
 
         <!-- START FOOTER-ALT -->
@@ -932,18 +1174,15 @@
     </div>
     <!-- END layout-wrapper -->
     <!-- JAVASCRIPT -->
-    <script src="./assets/libs/jquery/jquery.v3.4.1.min.js"></script>
+    <script src="assets/libs/jquery/jquery.v3.4.1.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
-    <script src="./assets/libs/daterangepicker/moment.min.js"></script>
-    <script src="./assets/libs/daterangepicker/daterangepicker.js"></script>
-    <script src="assets/libs/ckeditor/ckeditor.js"></script>
+    <!-- Choice Js -->
+    <!-- Swiper Js -->
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="assets/js/pages/index.init.js"></script>
     <!-- App Js -->
     <script src="assets/js/app.js"></script>
-    <script src="./assets/js/pages/manage-job.js"></script>
-    <script src="./assets/js/pages/dashboard.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
   </body>
 </html>

@@ -2132,9 +2132,9 @@ body[data-layout-mode="dark"] .accordion-button {
   font-size: 12px;
   font-weight: 500;
   line-height: 10px;
-  background: #004b6f;
+  background: #e6370b;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: inline-block;
   padding: 6px;
 }
@@ -2143,7 +2143,7 @@ body[data-layout-mode="dark"] .accordion-button {
   position: absolute;
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
-  border-right: 11px solid #004b6f;
+  border-right: 11px solid #e6370b;
   left: -11px;
   top: 0;
 }
@@ -2623,6 +2623,11 @@ body[data-layout-mode="dark"] .card {
 }
 
 .mirror-x {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.mirror-x-ar:lang(ar) {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
