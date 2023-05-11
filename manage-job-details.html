@@ -688,7 +688,7 @@
                           </li>
                           <li class="nav-item" role="presentation">
                             <button
-                              class="nav-link disabled"
+                              class="nav-link"
                               id="admitted-tab"
                               data-bs-toggle="tab"
                               data-bs-target="#admitted"
@@ -711,7 +711,7 @@
                               aria-controls="rejected"
                               aria-selected="false"
                             >
-                              Admitted List
+                              Rejected List
                             </button>
                           </li>
                         </ul>
@@ -1266,7 +1266,543 @@
                             role="tabpanel"
                             aria-labelledby="dephead-tab"
                           >
-                            ...
+                            <div class="row g-4 d-flex justify-content-between">
+                              <div class="col-12">
+                                <div class="row align-items-center mb-2">
+                                  <div class="col-lg-4">
+                                    <div class="mb-3 mb-lg-0">
+                                      <h6 class="fs-16 mb-0 text-muted">
+                                        Department Head
+                                      </h6>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-8">
+                                    <div class="row d-flex justify-content-end">
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input
+                                            class="form-control"
+                                            type="text"
+                                            name="search"
+                                            id="tableKey"
+                                            placeholder="Search Candidates .."
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="selection-widget">
+                                          <select
+                                            class="form-select"
+                                            data-trigger
+                                            name="choices-candidate-page"
+                                            id="choices-candidate-page"
+                                            aria-label="Default select example"
+                                          >
+                                            <option value="">
+                                              -- Sort By --
+                                            </option>
+                                            <option value="ne">
+                                              Submission Priority
+                                            </option>
+                                            <option value="ne">A-Z DESC</option>
+                                            <option value="ne">A-Z ASC</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--end row-->
+                                <div class="row">
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div
                             class="tab-pane fade"
@@ -1274,15 +1810,1087 @@
                             role="tabpanel"
                             aria-labelledby="hrhead-tab"
                           >
-                            ...
+                            <div class="row g-4 d-flex justify-content-between">
+                              <div class="col-12">
+                                <div class="row align-items-center mb-2">
+                                  <div class="col-lg-4">
+                                    <div class="mb-3 mb-lg-0">
+                                      <h6 class="fs-16 mb-0 text-muted">
+                                        Department Head
+                                      </h6>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-8">
+                                    <div class="row d-flex justify-content-end">
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input
+                                            class="form-control"
+                                            type="text"
+                                            name="search"
+                                            id="tableKey"
+                                            placeholder="Search Candidates .."
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="selection-widget">
+                                          <select
+                                            class="form-select"
+                                            data-trigger
+                                            name="choices-candidate-page"
+                                            id="choices-candidate-page"
+                                            aria-label="Default select example"
+                                          >
+                                            <option value="">
+                                              -- Sort By --
+                                            </option>
+                                            <option value="ne">
+                                              Submission Priority
+                                            </option>
+                                            <option value="ne">A-Z DESC</option>
+                                            <option value="ne">A-Z ASC</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--end row-->
+                                <div class="row">
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move HR Head</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div
                             class="tab-pane fade"
-                            id="admiited"
+                            id="admitted"
                             role="tabpanel"
                             aria-labelledby="admiited-tab"
                           >
-                            ...
+                            <div class="row g-4 d-flex justify-content-between">
+                              <div class="col-12">
+                                <div class="row align-items-center mb-2">
+                                  <div class="col-lg-4">
+                                    <div class="mb-3 mb-lg-0">
+                                      <h6 class="fs-16 mb-0 text-muted">
+                                        Approved List
+                                      </h6>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-8">
+                                    <div class="row d-flex justify-content-end">
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input
+                                            class="form-control"
+                                            type="text"
+                                            name="search"
+                                            id="tableKey"
+                                            placeholder="Search Candidates .."
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="selection-widget">
+                                          <select
+                                            class="form-select"
+                                            data-trigger
+                                            name="choices-candidate-page"
+                                            id="choices-candidate-page"
+                                            aria-label="Default select example"
+                                          >
+                                            <option value="">
+                                              -- Sort By --
+                                            </option>
+                                            <option value="ne">
+                                              Submission Priority
+                                            </option>
+                                            <option value="ne">A-Z DESC</option>
+                                            <option value="ne">A-Z ASC</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--end row-->
+                                <div class="row">
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Hire Candidate</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Hire Candidate</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Hire Candidate</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Hire Candidate
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Hire Candidate</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Hire Candidate</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div
                             class="tab-pane fade"
@@ -1290,7 +2898,543 @@
                             role="tabpanel"
                             aria-labelledby="rejected-tab"
                           >
-                            ...
+                            <div class="row g-4 d-flex justify-content-between">
+                              <div class="col-12">
+                                <div class="row align-items-center mb-2">
+                                  <div class="col-lg-4">
+                                    <div class="mb-3 mb-lg-0">
+                                      <h6 class="fs-16 mb-0 text-muted">
+                                        Rejected List
+                                      </h6>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-8">
+                                    <div class="row d-flex justify-content-end">
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input
+                                            class="form-control"
+                                            type="text"
+                                            name="search"
+                                            id="tableKey"
+                                            placeholder="Search Candidates .."
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="selection-widget">
+                                          <select
+                                            class="form-select"
+                                            data-trigger
+                                            name="choices-candidate-page"
+                                            id="choices-candidate-page"
+                                            aria-label="Default select example"
+                                          >
+                                            <option value="">
+                                              -- Sort By --
+                                            </option>
+                                            <option value="ne">
+                                              Submission Priority
+                                            </option>
+                                            <option value="ne">A-Z DESC</option>
+                                            <option value="ne">A-Z ASC</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--end row-->
+                                <div class="row">
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move To Approved</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move To Approved</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move To Approved</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Omar Bakry
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move To Approved
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Ahmed Ali Mohamed
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            Move To Approved</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Hire Candidate</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xxl-4 col-xl-6">
+                                    <div
+                                      class="candidate-grid-box bookmark-post card mt-4"
+                                    >
+                                      <div class="card-body p-sm-4 px-4 py-5">
+                                        <div class="d-flex mb-4">
+                                          <div
+                                            class="flex-shrink-0 position-relative"
+                                          >
+                                            <img
+                                              src="assets/images/profile.svg"
+                                              alt="User Image"
+                                              width="100"
+                                              class="avatar-md rounded"
+                                            />
+                                          </div>
+                                          <div class="ms-3">
+                                            <a
+                                              href="candidate-details.html"
+                                              class="primary-link"
+                                              ><h5 class="fs-17">
+                                                Hazem Almeshadd
+                                              </h5></a
+                                            >
+                                            <span
+                                              class="badge bg-soft-success fs-12 rounded-pill"
+                                              >Heart Surgeon</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="border rounded mb-4">
+                                          <div class="row g-0">
+                                            <div class="col-lg-6">
+                                              <div class="border-end px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Exp. : 0-3 Years
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6">
+                                              <div class="px-3 py-2">
+                                                <p
+                                                  class="text-muted mb-0 fs-14"
+                                                >
+                                                  Dental Care
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <!--end col-->
+                                          </div>
+                                          <!--end row-->
+                                        </div>
+                                        <p class="text-muted fs-14">
+                                          Some quick example text to build on
+                                          the card title and bulk the card's
+                                          content Moltin gives you platform the
+                                          card's content.
+                                        </p>
+                                        <div class="mt-3">
+                                          <a
+                                            href="#hireNow"
+                                            data-bs-toggle="modal"
+                                            class="btn btn-primary btn-hover w-100 mt-2"
+                                            ><i
+                                              class="mdi mdi-account-check"
+                                            ></i>
+                                            View Profile</a
+                                          >
+                                          <a
+                                            href="#"
+                                            class="btn btn-outline-danger w-100 mt-2"
+                                            ><i class="uil uil-layer-group"></i>
+                                            Move To Approved</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
