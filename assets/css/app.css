@@ -3006,3 +3006,43 @@ body[data-layout-mode="dark"] .card {
 .portal-dashboard-table {
   min-width: 650px;
 }
+
+/* Stage Tabs Container */
+
+.stage-tabs-container .nav-tabs {
+  border-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #eeeeee8b;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .stage-tabs-container .nav-tabs {
+    flex-direction: column;
+  }
+  .stage-tabs-container .nav-tabs .nav-link {
+    width: 100%;
+  }
+}
+
+.stage-tabs-container .nav-tabs .nav-link {
+  border: 1px solid #004b6f;
+  border-radius: 5px !important;
+  color: #004b6f;
+  font-size: 14px;
+  min-width: 140px;
+  transition: all 0.4s;
+}
+
+.stage-tabs-container .nav-tabs .nav-link.active {
+  background-color: #004b6f;
+  color: #ffffff;
+}
+
+.stage-tabs-container .nav-tabs .nav-link.disabled {
+  pointer-events: none;
+  opacity: 0.8;
+}
