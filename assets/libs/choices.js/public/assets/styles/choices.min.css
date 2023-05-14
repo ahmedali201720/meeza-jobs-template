@@ -205,6 +205,11 @@
   word-break: break-all;
   will-change: visibility;
 }
+@media screen and (min-width: 992px) {
+  .choices-form.lg .choices__list--dropdown {
+    width: 125%;
+  }
+}
 .choices__list--dropdown.is-active {
   visibility: visible;
 }

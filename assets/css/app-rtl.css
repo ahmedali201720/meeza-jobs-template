@@ -1388,9 +1388,33 @@ body[data-layout-mode="dark"] .registration-form .form-control {
   margin-right: auto;
   background-color: #d8f1fd;
 }
+@media screen and (max-width: 400px) {
+  .popu-category-box .popu-category-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popu-category-box .popu-category-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 .popu-category-box .popu-category-icon img {
-  width: 75px;
-  height: 75px;
+  width: 125px;
+  height: 125px;
+}
+@media screen and (max-width: 400px) {
+  .popu-category-box .popu-category-icon img {
+    width: 85px;
+    height: 85px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popu-category-box .popu-category-icon img {
+    width: 70px;
+    height: 70px;
+  }
 }
 .popu-category-box:hover {
   -webkit-transform: translateY(-8px);

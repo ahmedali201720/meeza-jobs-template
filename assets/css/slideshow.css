@@ -175,6 +175,12 @@
   opacity: 0.9;
 }
 
+@media screen and (max-width: 1350px) {
+  .slideshow-filter {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .slideshow-filter {
     width: 85%;
